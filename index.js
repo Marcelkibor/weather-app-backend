@@ -12,6 +12,6 @@ mongoose.connect(process.env.DB_CONNECT,).then(
 //Middlewares
 app.use(express.json());
 //routes
-app.use("/auth",r_auth);
-app.use("/location",r_location);
+app.use("/api/auth",r_auth);
+app.use("/api/location",r_location);
 app.listen(5000,()=>{console.log("Server started on port 5000")})
