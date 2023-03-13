@@ -6,7 +6,7 @@ const r_auth = require("./routes/authentication");
 const r_location = require("./routes/locations");
 //connect too DB
 dotenv.config();
-mongoose.connect(process.env.DB_CONNECT,).then(
+mongoose.connect(process.env.DB_CONNECT).then(
     console.log("DB Connected!")
 ).catch(e=>console.log(e));
 //Middlewares
